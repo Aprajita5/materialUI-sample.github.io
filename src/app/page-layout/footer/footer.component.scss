@@ -1,0 +1,26 @@
+section.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(175, 173, 169);
+    color: rgb(9, 2, 24);
+    text-align: center;
+    margin: 0px;
+a{
+    padding: 0 1rem;
+}
+
+.space{
+    margin-top: 10px;
+}
+}
+
+
+
+@media (max-width: 767px) { 
+    a{
+        display: block;
+    }
+
+}

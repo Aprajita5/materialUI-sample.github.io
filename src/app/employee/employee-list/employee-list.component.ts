@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { EmployeeService } from 'src/app/shared/employee.service';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 import { MatTable } from '@angular/material/table';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-list',
@@ -10,7 +11,7 @@ import { MatTable } from '@angular/material/table';
 })
 export class EmployeeListComponent implements OnInit {
 
-  constructor(public emplyeeService: EmployeeService) {
+  constructor(public emplyeeService: EmployeeService, public router: Router) {
    }
 
   //  dataSource = ELEMENT_DATA;dataSourse;
@@ -42,6 +43,10 @@ export class EmployeeListComponent implements OnInit {
 
   applyFilter(){
     this.listData.filter = this.searchKey.trim().toLowerCase();
+  }
+
+  btnClick() {
+    this.router.navigateByUrl("/emplyee-detail");
   }
 
 }

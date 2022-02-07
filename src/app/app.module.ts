@@ -15,7 +15,12 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
 import { DepartmentService } from './shared/department.service';
 import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
-import {MatTableModule} from '@angular/material/table'
+import {MatTableModule} from '@angular/material/table';
+import { RouterModule, Routes } from '@angular/router';
+import { LayoutComponent } from './page-layout/layout/layout.component';
+import { FooterComponent } from './page-layout/footer/footer.component';
+import { HeaderComponent } from './page-layout/header/header.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,11 @@ import {MatTableModule} from '@angular/material/table'
     FilesUploadComponent,
     EmployeeComponent,
     EmployeeDetailsComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    LayoutComponent,
+    FooterComponent,
+    HeaderComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +44,8 @@ import {MatTableModule} from '@angular/material/table'
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     MatTableModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [EmployeeService, DepartmentService],
   bootstrap: [AppComponent]

@@ -22,7 +22,8 @@ import { EmployeeListComponent } from '../employee/employee-list/employee-list.c
     Material.MatTableModule,
     Material.MatIconModule,
     Material.MatPaginatorModule,
-    Material.MatSortModule
+    Material.MatSortModule,
+    Material.MatMenuModule
   ],
   exports: [
     Material.MatToolbarModule,
@@ -39,7 +40,8 @@ import { EmployeeListComponent } from '../employee/employee-list/employee-list.c
     Material.MatTableModule,
     Material.MatIconModule,
     Material.MatPaginatorModule,
-    Material.MatSortModule
+    Material.MatSortModule,
+    Material.MatMenuModule
   ],
   entryComponents: [EmployeeListComponent]
 })
