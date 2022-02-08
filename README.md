@@ -7,6 +7,22 @@
 - CRUD handle with FireBase Data
 - Listing , sorting, pagination and keyword search using Angular Material UI.
 
+#Server-side rendering (SSR) with Angular Universal
+
+ To create the server-side application module, app.server.module.ts, run the following CLI command.
+ Run `ng add @nguniversal/express-engine` this commands creates the below new files ,
+ - src/main.server.ts
+ - src/app/app.server.module.ts
+ - tsconfig.server.json
+-  server.ts
+
+And will update below five files,
+- package.json
+- angular.json 
+- src/main.ts
+- src/app/app.module.ts 
+- src/app/app-routing.module.ts
+
 # Learn
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
